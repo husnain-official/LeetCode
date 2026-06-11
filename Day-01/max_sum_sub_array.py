@@ -38,11 +38,20 @@ class Solution:
     def maxSubArray(self, nums: list[int]) -> int:  # time O(n) , space O(1) 
         sum = nums[0]
         max_ = nums[0]
+        self.start = -1
+        self.end = -1 
         for i in range(1,len(nums)):
+            if(nums[i] > sum+nums[i]) :
+                temp = i
             sum = max(nums[i],sum+nums[i])
+            if(max_ < sum):
+                self.end = i 
+                self.start = temp
             max_ = max(sum,max_)
         return max_
     # -----------------------------------------------------------------------------
-nums = [-2,1,-3,4,-1,2,1,-5,4]
+nums = [-3,4,1,-5,5,-3]
+# nums = [-2,4,5]
 s1 = Solution()
 print(f"Max subarray sum is: {s1.maxSubArray(nums)}")
+print(f"Start : {s1.start} , End : {s1.end}")
