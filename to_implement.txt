@@ -1,0 +1,9 @@
+// Data-Structures 
+    1. Hashmap.
+    2. Priority Queue (Min-Heap)/ A balanced binary tree DS
+    3. 
+
+// Algorithms
+    1. Sorting Algos.
+    2. Kandane's Algorithm.
+    3. 

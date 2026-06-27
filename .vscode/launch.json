@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/DELL/OneDrive/Desktop/DSA/Week-01/Day-01",
-      "program": "c:/Users/DELL/OneDrive/Desktop/DSA/Week-01/Day-01/build/Debug/outDebug",
+      "cwd": "c:/Users/DELL/OneDrive/Desktop/DSA/Week-01/Day-02",
+      "program": "c:/Users/DELL/OneDrive/Desktop/DSA/Week-01/Day-02/build/Release/outRelease",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
