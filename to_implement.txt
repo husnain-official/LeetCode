@@ -7,3 +7,7 @@
     1. Sorting Algos.
     2. Kandane's Algorithm.
     3. 
+
+
+// Questions:
+    1. What does traversal/lookup mean through a data structure ? 

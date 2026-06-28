@@ -12,8 +12,11 @@ using namespace std;
  * * 2. Constraints:
  * - 1 <= nums.length <= 10^5
  * - -10^9 <= nums[i] <= 10^9
+ * * * 3. Examples:
+ * - Example 1: Input: nums = [1,2,3,1] | Output: true
+ * - Example 2: Input: nums = [1,2,3,4] | Output: false
  */
-class Solution
+    class Solution
 {
 public:
     // 1. Brute Force Approach
