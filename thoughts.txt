@@ -1,0 +1,2 @@
+3Sum was hard to do because of the identicle triplets
+best time to buy and sell -> Easy but coult not figure out in 1 whole day
