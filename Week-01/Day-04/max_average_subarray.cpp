@@ -74,6 +74,3 @@ int main()
     std::vector<int> array{1, 12, -5, -6, 50, 3};
     s1.findMaxAverage(array, 4);
 }
-// 1. Maximum Average Subarray I (LeetCode #643)
-// 2. 2. Maximum Sum of Distinct Subarrays With Length K (LeetCode #2461)
-// 3. 3. Maximum Sum of Almost Unique Subarray (LeetCode #2841)
