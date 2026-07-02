@@ -24,6 +24,9 @@ class NumArray
     std::vector<int> prefix_sum;
 
 public: // Time complexity O(k), k = right - left, Space complexity (n)
+        // Construction has no iteration here, we simply move, very cheap
+        // But, each call of sumRange requrires 'k' = 'right-left' iterations. -> k O(1) operations
+        // eg: say right = 1000, left = 0. 1 function call = 1000 iterations, now 1000 function calls = 10^6 iterations -> (k*1000) O(1) operation
     NumArray(vector<int> &nums)
     {
         new_nums = move(nums);
@@ -42,6 +45,10 @@ class NumArray
     std::vector<int> prefix_sum;
 
 public: // Time complexity O(n), Space complexity (n)
+        // Here construction is expensive, on construction 'n' iterations are done.
+        // But as a result, the Function call is cheap
+        // 1 function call = 0 iterations -> 1 O(1) operation
+        // 1000 function calls = 0 iterations -> 1000 O(1) operation
     NumArray(vector<int> &nums)
     {
         prefix_sum.reserve(nums.size());
@@ -60,7 +67,9 @@ public: // Time complexity O(n), Space complexity (n)
     }
 };
 // Other Approaches:
-
+// 1. Segment Tree, Time complexity: O(n) build, O(log n) query, Space complexity: O(n)
+// 2. Binary Indexed Tree (Fenwick Tree), Time complexity: O(n log n) build, O(log n) query, Space complexity: O(n)
+// 3. Sqrt Decomposition, Time complexity: O(n) build, O(sqrt(n)) query, Space complexity: O(n)
 int main()
 {
 }
